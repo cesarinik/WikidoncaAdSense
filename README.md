@@ -1,6 +1,9 @@
-WikiBanner
+Wikidonca AdSense
 ==========
+Basato sul progetto Wikibanner di maelstr0m (abbandonato), aggiornato al nuovo formato JSON ed inoltre personalizzato e implementato con nuove funzioni (tra cui i banner in sidebar), permette di inserire nel wiki i i banner indicati nel file di configurazione.
 
-Adds an easy system for adding and configuring wiki banners on MediaWiki powered websites from the LocalSettings.php file.
+Per far funzionare i banner è sufficiente dichiarare le tre variabili $wgBannerSuperiore, $wgBannerInferiore, $wgBannerLaterale, nel file LocalSettings.php con i codici di Google AdSense (è anche possibile inserire div e stili)
 
-Installation instructions can be found at http://www.mediawiki.org/wiki/Extension:WikiBanner
+Es.
+
+$wgBannerSuperiore = '<div style="text-align:center; margin:10px 0px;"><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-full-width-responsive="true" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>';
