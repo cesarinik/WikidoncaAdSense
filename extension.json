@@ -1,16 +1,22 @@
 {
-	"name": "WikiBannerRC",
-	"version": "1.2 beta",
-	"author": "maelstr0m e [https://www.mediawiki.org/wiki/User:Cesarinik Riccardo Cesarini]",
-	"url": "https://github.com/cesarinik/wikibannerRC",
-	"description": "Allows top and bottom banners to be added to the wiki as configured in the LocalSettings.php file.",
-	"license-name": "MIT",
+	"name": "Wikidonca AdSense",
+	"version": "0.8 beta",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Cesarinik Riccardo Cesarini]"
+	],
+	"url": "https://github.com/cesarinik/WikidoncaAdSense",
+	"description": "Basato sul progetto [https://www.mediawiki.org/wiki/Extension:WikiBanner Wikibanner] di maelstr0m (abbandonato), aggiornato al nuovo formato JSON ed inoltre personalizzato e implementato con nuove funzioni (tra cui i banner in sidebar), permette di inserire nel wiki i i banner indicati nel file di configurazione.",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.33.0"
+	},
+	"AutoloadClasses": {
+		"WikidoncaAdSenseHooks": "WikidoncaAdSense.hooks.php"
 	},
 	"Hooks": {
-		"BeforePageDisplay": "Banner::InsertAds"
+		"BeforePageDisplay": "WikidoncaAdSenseHooks::PaginaPrincipale",
+		"SkinBuildSidebar": "WikidoncaAdSenseHooks::Laterale"
 	},
 	"manifest_version": 2
 }
