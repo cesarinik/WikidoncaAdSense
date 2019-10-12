@@ -6,4 +6,6 @@ Per far funzionare i banner è sufficiente dichiarare le tre variabili $wgBanner
 
 Es.
 
+```
 $wgBannerSuperiore = '<div style="text-align:center; margin:10px 0px;"><script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-full-width-responsive="true" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>';
+```
